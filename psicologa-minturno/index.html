@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/logo-arianna-signore-psicologa.jpg">
+
+    <title>Psicologa a Minturno | Dott.ssa Arianna Signore — Ansia, Depressione, DSA</title>
+    <meta name="description" content="Studio di psicologia a Minturno (LT). Percorsi CBT e ACT per ansia, depressione, adolescenti e DSA. Dott.ssa Arianna Signore — prenota la prima consulenza.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Dott.ssa Arianna Signore">
+
+    <meta property="og:title" content="Psicologa a Minturno | Dott.ssa Arianna Signore">
+    <meta property="og:description" content="Studio di psicologia a Minturno (LT). Percorsi CBT e ACT per ansia, depressione, adolescenti e DSA.">
+    <meta property="og:url" content="https://ariannasignore.it/psicologa-minturno/">
+    <meta property="og:image" content="https://ariannasignore.it/arianna-signore-psicologo.jpg">
+    <meta property="og:locale" content="it_IT">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Dott.ssa Arianna Signore — Psicologa a Minturno",
+      "url": "https://ariannasignore.it/psicologa-minturno/",
+      "telephone": "+39-375-7336493",
+      "email": "ariannasignore@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Minturno",
+        "addressRegion": "LT",
+        "addressCountry": "IT"
+      },
+      "areaServed": ["Minturno", "Scauri", "Formia", "Castelforte", "Marina di Minturno", "Provincia di Latina"]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #5fc1cc;
+            --secondary: #346a70;
+            --accent: #f4a261;
+            --light: #f4f8f8;
+            --dark: #1a2e2f;
+            --text: #3a4a4b;
+            --muted: #7a9a9b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { font-family: 'DM Sans', sans-serif; line-height: 1.7; color: var(--text); }
+
+        header {
+            background: white; box-shadow: 0 1px 0 rgba(52,106,112,0.1);
+            position: fixed; width: 100%; top: 0; z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1200px; margin: 0 auto; padding: 0.9rem 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo { width: 56px; height: 56px; }
+        .logo img { width: 100%; height: 100%; object-fit: contain; }
+        nav ul { display: flex; list-style: none; gap: 1.8rem; align-items: center; }
+        nav a { text-decoration: none; color: var(--dark); font-weight: 500; font-size: 0.95rem; transition: color 0.2s; }
+        nav a:hover { color: var(--primary); }
+        .nav-back {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            background: var(--light); border: 1.5px solid var(--primary);
+            border-radius: 999px; padding: 0.25rem 1rem;
+            color: var(--secondary) !important; font-size: 0.85rem !important; font-weight: 600 !important;
+        }
+        .nav-back:hover { background: var(--primary) !important; color: white !important; }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, #2a5a60 0%, var(--primary) 100%);
+            color: white; padding: 7rem 2rem 4rem;
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -80px; right: -80px;
+            width: 400px; height: 400px;
+            background: rgba(255,255,255,0.04); border-radius: 50%;
+        }
+        .hero-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
+
+        .breadcrumb {
+            font-size: 0.82rem; opacity: 0.75; margin-bottom: 1rem;
+            display: flex; align-items: center; gap: 0.4rem;
+        }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 999px; padding: 0.35rem 1rem;
+            font-size: 0.82rem; font-weight: 500; margin-bottom: 1.2rem;
+        }
+        .hero-badge::before {
+            content: ''; width: 7px; height: 7px;
+            background: #a8e6cb; border-radius: 50%; display: inline-block;
+        }
+
+        .hero h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.8rem; line-height: 1.15;
+            margin-bottom: 1.2rem; font-weight: 400;
+        }
+        .hero p.lead { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; font-weight: 300; max-width: 620px; }
+        .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        .btn-primary {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: white; color: var(--secondary);
+            padding: 0.85rem 1.8rem; border-radius: 999px;
+            font-weight: 600; font-size: 0.95rem; text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+        .btn-ghost {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: transparent; color: white;
+            border: 1.5px solid rgba(255,255,255,0.5);
+            padding: 0.85rem 1.8rem; border-radius: 999px;
+            font-weight: 500; font-size: 0.95rem; text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: white; }
+
+        /* CONTENUTO */
+        section { padding: 4.5rem 2rem; }
+        .container { max-width: 860px; margin: 0 auto; }
+
+        h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2rem; margin-bottom: 0.5rem;
+            color: var(--dark); font-weight: 400;
+        }
+        .section-intro { color: var(--muted); margin-bottom: 2rem; }
+        p { margin-bottom: 1.1rem; font-size: 1rem; }
+
+        /* SERVIZI */
+        .servizi-list { list-style: none; padding: 0; display: grid; gap: 0.8rem; margin: 1.5rem 0; }
+        .servizi-list li {
+            display: flex; align-items: flex-start; gap: 0.8rem;
+            background: white; padding: 1rem 1.2rem;
+            border-radius: 12px; border: 1px solid rgba(95,193,204,0.15);
+            box-shadow: 0 2px 12px rgba(52,106,112,0.06); font-size: 0.97rem;
+        }
+        .servizi-list li::before {
+            content: '✓'; color: var(--primary); font-weight: 700;
+            font-size: 1rem; flex-shrink: 0; margin-top: 0.1rem;
+        }
+
+        /* INFO BOX */
+        .info-box {
+            background: var(--light); border-left: 4px solid var(--primary);
+            border-radius: 0 12px 12px 0; padding: 1.5rem 1.8rem; margin: 2rem 0;
+        }
+        .info-box h3 { color: var(--secondary); margin-bottom: 0.5rem; font-size: 1rem; }
+        .info-box p { margin: 0; font-size: 0.97rem; color: var(--text); }
+
+        /* ZONE SERVITE */
+        .zone-grid {
+            display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.5rem 0;
+        }
+        .zona-tag {
+            background: white; border: 1.5px solid var(--primary);
+            color: var(--secondary); border-radius: 999px;
+            padding: 0.3rem 1rem; font-size: 0.85rem; font-weight: 500;
+        }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, #2a5a60, var(--primary));
+            color: white; padding: 4rem 2rem; text-align: center;
+        }
+        .cta-section h2 { color: white; margin-bottom: 0.8rem; }
+        .cta-section p { opacity: 0.9; margin-bottom: 2rem; font-size: 1.05rem; }
+        .cta-contacts { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+        .cta-contact-item {
+            display: flex; align-items: center; gap: 0.6rem;
+            background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+            padding: 0.75rem 1.4rem; border-radius: 999px;
+            color: white; text-decoration: none; font-weight: 500; font-size: 0.95rem;
+            transition: background 0.2s;
+        }
+        .cta-contact-item:hover { background: rgba(255,255,255,0.22); }
+
+        footer {
+            background: var(--dark); color: rgba(255,255,255,0.6);
+            text-align: center; padding: 1.8rem 2rem; font-size: 0.85rem;
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+
+        .hamburger { display: none; flex-direction: column; cursor: pointer; padding: 5px; }
+        .bar { width: 24px; height: 2.5px; background: var(--dark); margin: 3px 0; transition: 0.3s; border-radius: 2px; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            h2 { font-size: 1.7rem; }
+            section { padding: 3rem 1.2rem; }
+            .hero-ctas { flex-direction: column; }
+            .btn-primary, .btn-ghost { justify-content: center; }
+            .hamburger { display: flex; z-index: 1001; }
+            nav.nav-menu {
+                position: fixed; left: -100%; top: 0;
+                flex-direction: column; background: white;
+                width: 80%; height: 100vh; transition: 0.3s;
+                box-shadow: 4px 0 24px rgba(0,0,0,0.12);
+                padding: 80px 2rem 2rem; z-index: 1000; overflow-y: auto;
+            }
+            nav.nav-menu.active { left: 0; }
+            nav.nav-menu ul { flex-direction: column; gap: 0; }
+            nav.nav-menu ul li { border-bottom: 1px solid var(--light); }
+            nav.nav-menu a { padding: 1rem 0; display: block; font-size: 1.05rem; }
+            .hamburger.active .bar:nth-child(2) { opacity: 0; }
+            .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+            .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="/" aria-label="Torna alla home">
+                <div class="logo">
+                    <img src="/logo-arianna-signore-psicologa.jpg" alt="Logo Dott.ssa Arianna Signore" width="56" height="56">
+                </div>
+            </a>
+            <div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="/#approccio">Approccio</a></li>
+                    <li><a href="/#chi-sono">Chi Sono</a></li>
+                    <li><a href="/#articoli">Articoli</a></li>
+                    <li><a href="/#contatti">Contatti</a></li>
+                    <li><a href="/psicologa-scauri/" class="nav-back">Scauri</a></li>
+                    <li><a href="/" class="nav-back">← Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="breadcrumb">
+                <a href="/">Home</a> › Psicologa a Minturno
+            </div>
+            <div class="hero-badge">Studio a Scauri, nel comune di Minturno (LT)</div>
+            <h1>Psicologa a Minturno —<br>percorsi su misura per il tuo benessere</h1>
+            <p class="lead">Minturno e le sue frazioni — Scauri, Tufo, Marina di Minturno — sono un territorio dove trovare un professionista della salute mentale competente e vicino non è sempre semplice. Sono qui per questo.</p>
+            <div class="hero-ctas">
+                <a href="https://wa.me/393757336493" target="_blank" class="btn-primary">💬 Scrivimi su WhatsApp</a>
+                <a href="tel:+393757336493" class="btn-ghost">📞 +39 375 7336493</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTRO -->
+    <section class="bg-white">
+        <div class="container">
+            <h2>Uno studio di psicologia nel comune di Minturno</h2>
+            <p class="section-intro">Psicologa CBT, ACT ed EMDR — studio a Scauri</p>
+            <p>Sono <strong>Arianna Signore</strong>, psicologa con studio a <strong>Scauri</strong>, nel comune di Minturno. Lavoro con un approccio scientifico — CBT, ACT e EMDR — e mi occupo di ansia, depressione, difficoltà adolescenziali e disturbi del neurosviluppo come i DSA.</p>
+            <p>Ho conseguito la laurea magistrale con lode in Psicologia dello sviluppo alla Sapienza di Roma, il Master in DSA all'Università G. d'Annunzio e sono autrice di pubblicazioni scientifiche nel campo della psicologia clinica. Sono socia di ACT Italia e ACBS.</p>
+
+            <div class="info-box">
+                <h3>📍 Come raggiungermi</h3>
+                <p>Lo studio si trova a Scauri, facilmente raggiungibile dall'intero comune di Minturno e dai paesi vicini. Gli orari sono flessibili per venire incontro a chi lavora o studia. Per chi non può spostarsi, è disponibile il <strong>percorso online</strong> con la stessa qualità clinica della seduta in presenza.</p>
+            </div>
+
+            <p>Zone servite:</p>
+            <div class="zone-grid">
+                <span class="zona-tag">Minturno</span>
+                <span class="zona-tag">Scauri</span>
+                <span class="zona-tag">Marina di Minturno</span>
+                <span class="zona-tag">Tufo</span>
+                <span class="zona-tag">Formia</span>
+                <span class="zona-tag">Castelforte</span>
+                <span class="zona-tag">Sessa Aurunca</span>
+                <span class="zona-tag">Tutta Italia (online)</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIZI -->
+    <section style="background: var(--light); padding: 4.5rem 2rem;">
+        <div class="container">
+            <h2>Cosa posso fare per te</h2>
+            <p class="section-intro">Lavoro principalmente con:</p>
+            <ul class="servizi-list">
+                <li><div><strong>Adulti e giovani adulti</strong> che affrontano ansia, stress, attacchi di panico</div></li>
+                <li><div><strong>Persone in momenti di crisi depressiva</strong> o calo motivazionale</div></li>
+                <li><div><strong>Famiglie con figli adolescenti</strong> in difficoltà scolastica, emotiva o relazionale</div></li>
+                <li><div><strong>Bambini e ragazzi con DSA o ADHD</strong> e le loro famiglie (parent training)</div></li>
+                <li><div><strong>Elaborazione di eventi difficili</strong> del passato con la tecnica EMDR</div></li>
+                <li><div><strong>Orientamento professionale e scelte di vita</strong> in momenti di cambiamento</div></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FORMAZIONE -->
+    <section class="bg-white">
+        <div class="container">
+            <h2>La mia formazione</h2>
+            <p>Ho conseguito la <strong>laurea magistrale con lode</strong> in Psicologia dello sviluppo, dell'educazione e del benessere alla Sapienza di Roma. Ho poi approfondito il campo dei DSA con un <strong>Master specifico</strong> all'Università G. d'Annunzio di Chieti-Pescara.</p>
+            <p>Sono in formazione in <strong>psicoterapia cognitivo-comportamentale</strong> e socia di <strong>ACT Italia</strong> e <strong>ACBS</strong>. Ho collaborato a ricerche scientifiche nel campo dei disturbi emotivi e clinici — un aspetto che ritengo fondamentale: la psicologia che pratico deve avere una base solida nella ricerca.</p>
+
+            <div class="info-box">
+                <h3>🔬 Approcci evidence-based</h3>
+                <p>CBT, ACT ed EMDR sono tra gli approcci psicologici con maggiore supporto empirico nella letteratura scientifica internazionale. Questo significa che le tecniche che utilizzo sono state testate e validate in ricerche controllate.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prenota una consulenza a Minturno</h2>
+            <p>La prima conversazione non è un impegno. È il momento in cui puoi raccontarmi cosa stai vivendo e io posso spiegarti come potrei aiutarti.</p>
+            <div class="cta-contacts">
+                <a href="https://wa.me/393757336493" target="_blank" class="cta-contact-item">💬 WhatsApp</a>
+                <a href="tel:+393757336493" class="cta-contact-item">📞 +39 375 7336493</a>
+                <a href="mailto:ariannasignore@gmail.com" class="cta-contact-item">✉️ Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Dott.ssa Arianna Signore — Psicologa a <a href="/psicologa-scauri/">Scauri</a> e <a href="/psicologa-minturno/">Minturno</a> | <a href="/">Home</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            document.addEventListener('click', function(e) {
+                if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

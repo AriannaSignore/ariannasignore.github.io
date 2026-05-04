@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/logo-arianna-signore-psicologa.jpg">
+
+    <title>Terapia Cognitivo Comportamentale (CBT) a Scauri e Formia | Dott.ssa Arianna Signore</title>
+    <meta name="description" content="Cos'è la terapia cognitivo comportamentale (CBT) e come funziona? La Dott.ssa Arianna Signore offre percorsi CBT a Scauri (Minturno) e Formia per ansia, depressione e non solo.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Dott.ssa Arianna Signore">
+
+    <meta property="og:title" content="Terapia Cognitivo Comportamentale (CBT) | Dott.ssa Arianna Signore">
+    <meta property="og:description" content="Percorsi CBT a Scauri (Minturno) e Formia per ansia, depressione e difficoltà relazionali.">
+    <meta property="og:url" content="https://ariannasignore.it/terapia-cognitivo-comportamentale/">
+    <meta property="og:image" content="https://ariannasignore.it/arianna-signore-psicologo.jpg">
+    <meta property="og:locale" content="it_IT">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Terapia Cognitivo Comportamentale (CBT)",
+      "description": "Informazioni sulla terapia cognitivo comportamentale e percorsi CBT a Scauri e Formia.",
+      "url": "https://ariannasignore.it/terapia-cognitivo-comportamentale/",
+      "about": { "@type": "MedicalTherapy", "name": "Terapia Cognitivo Comportamentale" },
+      "author": {
+        "@type": "Person",
+        "name": "Dott.ssa Arianna Signore",
+        "url": "https://ariannasignore.it"
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #5fc1cc;
+            --secondary: #346a70;
+            --light: #f4f8f8;
+            --dark: #1a2e2f;
+            --text: #3a4a4b;
+            --muted: #7a9a9b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'DM Sans', sans-serif; line-height: 1.7; color: var(--text); }
+
+        /* HEADER */
+        header {
+            background: white; box-shadow: 0 1px 0 rgba(52,106,112,0.1);
+            position: fixed; width: 100%; top: 0; z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1200px; margin: 0 auto; padding: 0.9rem 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo { width: 56px; height: 56px; }
+        .logo img { width: 100%; height: 100%; object-fit: contain; }
+        nav ul { display: flex; list-style: none; gap: 1.8rem; align-items: center; }
+        nav a { text-decoration: none; color: var(--dark); font-weight: 500; font-size: 0.95rem; transition: color 0.2s; }
+        nav a:hover { color: var(--primary); }
+        .nav-back {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            background: var(--light); border: 1.5px solid var(--primary);
+            border-radius: 999px; padding: 0.25rem 1rem;
+            color: var(--secondary) !important; font-size: 0.85rem !important; font-weight: 600 !important;
+        }
+        .nav-back:hover { background: var(--primary) !important; color: white !important; }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, var(--secondary) 0%, #4aabb7 100%);
+            color: white; padding: 7rem 2rem 4.5rem;
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -60px; right: -60px;
+            width: 380px; height: 380px;
+            background: rgba(255,255,255,0.05); border-radius: 50%;
+        }
+        .hero::after {
+            content: ''; position: absolute; bottom: -80px; left: 10%;
+            width: 250px; height: 250px;
+            background: rgba(255,255,255,0.03); border-radius: 50%;
+        }
+        .hero-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
+
+        .breadcrumb {
+            font-size: 0.82rem; opacity: 0.75; margin-bottom: 1rem;
+            display: flex; align-items: center; gap: 0.4rem;
+        }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 999px; padding: 0.35rem 1rem;
+            font-size: 0.82rem; font-weight: 500; margin-bottom: 1.2rem;
+        }
+        .hero-badge::before {
+            content: ''; width: 7px; height: 7px;
+            background: #a8e6cb; border-radius: 50%; display: inline-block;
+        }
+
+        .hero h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.8rem; line-height: 1.15;
+            margin-bottom: 1.2rem; font-weight: 400;
+        }
+        .hero p.lead { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; font-weight: 300; max-width: 640px; }
+        .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        .btn-primary {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: white; color: var(--secondary);
+            padding: 0.85rem 1.8rem; border-radius: 999px;
+            font-weight: 600; font-size: 0.95rem; text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+        .btn-ghost {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: transparent; color: white;
+            border: 1.5px solid rgba(255,255,255,0.5);
+            padding: 0.85rem 1.8rem; border-radius: 999px;
+            font-weight: 500; font-size: 0.95rem; text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: white; }
+
+        /* CONTENUTO */
+        section { padding: 4.5rem 2rem; }
+        .container { max-width: 860px; margin: 0 auto; }
+
+        h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2rem; margin-bottom: 0.5rem;
+            color: var(--dark); font-weight: 400;
+        }
+        .section-intro { color: var(--muted); margin-bottom: 2rem; }
+        p { margin-bottom: 1.1rem; font-size: 1rem; }
+
+        /* FASI */
+        .fasi-grid { display: grid; gap: 1.2rem; margin: 1.5rem 0; }
+        .fase-card {
+            display: flex; gap: 1.2rem; align-items: flex-start;
+            background: white; padding: 1.3rem 1.5rem;
+            border-radius: 14px; border: 1px solid rgba(95,193,204,0.15);
+            box-shadow: 0 2px 12px rgba(52,106,112,0.06);
+        }
+        .fase-number {
+            width: 36px; height: 36px; flex-shrink: 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            color: white; font-weight: 700; font-size: 0.9rem;
+        }
+        .fase-card h3 { font-size: 1rem; color: var(--dark); margin-bottom: 0.3rem; }
+        .fase-card p { font-size: 0.95rem; margin: 0; color: var(--text); }
+
+        /* PER CHI */
+        .perchi-list { list-style: none; padding: 0; display: grid; gap: 0.8rem; margin: 1.5rem 0; }
+        .perchi-list li {
+            display: flex; align-items: flex-start; gap: 0.8rem;
+            background: white; padding: 1rem 1.2rem;
+            border-radius: 12px; border: 1px solid rgba(95,193,204,0.15);
+            box-shadow: 0 2px 12px rgba(52,106,112,0.06); font-size: 0.97rem;
+        }
+        .perchi-list li::before {
+            content: '✓'; color: var(--primary); font-weight: 700;
+            font-size: 1rem; flex-shrink: 0; margin-top: 0.1rem;
+        }
+
+        /* INFO BOX */
+        .info-box {
+            background: var(--light); border-left: 4px solid var(--primary);
+            border-radius: 0 12px 12px 0; padding: 1.5rem 1.8rem; margin: 2rem 0;
+        }
+        .info-box h3 { color: var(--secondary); margin-bottom: 0.5rem; font-size: 1rem; }
+        .info-box p { margin: 0; font-size: 0.97rem; }
+
+        /* LINK INTERNI */
+        .link-correlati {
+            display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem;
+        }
+        .link-correlato {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            background: var(--light); border: 1.5px solid var(--primary);
+            color: var(--secondary); border-radius: 999px;
+            padding: 0.4rem 1.1rem; font-size: 0.88rem; font-weight: 500;
+            text-decoration: none; transition: background 0.2s, color 0.2s;
+        }
+        .link-correlato:hover { background: var(--primary); color: white; }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, var(--secondary), #4aabb7);
+            color: white; padding: 4rem 2rem; text-align: center;
+        }
+        .cta-section h2 { color: white; margin-bottom: 0.8rem; }
+        .cta-section p { opacity: 0.9; margin-bottom: 2rem; font-size: 1.05rem; }
+        .cta-contacts { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+        .cta-contact-item {
+            display: flex; align-items: center; gap: 0.6rem;
+            background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+            padding: 0.75rem 1.4rem; border-radius: 999px;
+            color: white; text-decoration: none; font-weight: 500; font-size: 0.95rem;
+            transition: background 0.2s;
+        }
+        .cta-contact-item:hover { background: rgba(255,255,255,0.22); }
+
+        footer {
+            background: var(--dark); color: rgba(255,255,255,0.6);
+            text-align: center; padding: 1.8rem 2rem; font-size: 0.85rem;
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+
+        .hamburger { display: none; flex-direction: column; cursor: pointer; padding: 5px; }
+        .bar { width: 24px; height: 2.5px; background: var(--dark); margin: 3px 0; transition: 0.3s; border-radius: 2px; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            h2 { font-size: 1.7rem; }
+            section { padding: 3rem 1.2rem; }
+            .hero-ctas { flex-direction: column; }
+            .btn-primary, .btn-ghost { justify-content: center; }
+            .hamburger { display: flex; z-index: 1001; }
+            nav.nav-menu {
+                position: fixed; left: -100%; top: 0;
+                flex-direction: column; background: white;
+                width: 80%; height: 100vh; transition: 0.3s;
+                box-shadow: 4px 0 24px rgba(0,0,0,0.12);
+                padding: 80px 2rem 2rem; z-index: 1000; overflow-y: auto;
+            }
+            nav.nav-menu.active { left: 0; }
+            nav.nav-menu ul { flex-direction: column; gap: 0; }
+            nav.nav-menu ul li { border-bottom: 1px solid var(--light); }
+            nav.nav-menu a { padding: 1rem 0; display: block; font-size: 1.05rem; }
+            .hamburger.active .bar:nth-child(2) { opacity: 0; }
+            .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+            .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="/" aria-label="Torna alla home">
+                <div class="logo">
+                    <img src="/logo-arianna-signore-psicologa.jpg" alt="Logo Dott.ssa Arianna Signore" width="56" height="56">
+                </div>
+            </a>
+            <div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="/#approccio">Approccio</a></li>
+                    <li><a href="/#chi-sono">Chi Sono</a></li>
+                    <li><a href="/#articoli">Articoli</a></li>
+                    <li><a href="/#contatti">Contatti</a></li>
+                    <li><a href="/emdr/" class="nav-back">EMDR</a></li>
+                    <li><a href="/" class="nav-back">← Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="breadcrumb">
+                <a href="/">Home</a> › Terapia Cognitivo Comportamentale
+            </div>
+            <div class="hero-badge">Approccio evidence-based — Studio a Scauri e Formia</div>
+            <h1>Terapia Cognitivo<br>Comportamentale (CBT)</h1>
+            <p class="lead">Uno degli approcci psicologici più studiati e validati al mondo. Strumenti pratici per cambiare pensieri, emozioni e comportamenti che ti limitano nella vita quotidiana.</p>
+            <div class="hero-ctas">
+                <a href="https://wa.me/393757336493" target="_blank" class="btn-primary">💬 Prenota una consulenza</a>
+                <a href="tel:+393757336493" class="btn-ghost">📞 +39 375 7336493</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- COS'È -->
+    <section class="bg-white">
+        <div class="container">
+            <h2>Cos'è la terapia cognitivo comportamentale</h2>
+            <p class="section-intro">Un approccio pratico, concreto e basato sulla ricerca scientifica</p>
+            <p>La <strong>terapia cognitivo comportamentale</strong> — conosciuta con l'acronimo CBT, dall'inglese <em>Cognitive Behavioral Therapy</em> — è un approccio psicologico che si concentra sul legame tra pensieri, emozioni e comportamenti. L'idea di fondo è semplice ma potente: il modo in cui interpretiamo le situazioni influenza come ci sentiamo e come agiamo.</p>
+            <p>Quando questi schemi di pensiero diventano rigidi o distorti — "non sono capace di niente", "andrà sicuramente male", "gli altri mi giudicano sempre" — alimentano un disagio emotivo che si autorinforza. La CBT lavora proprio su questi schemi, aiutandoti a riconoscerli, metterli in discussione e sostituirli con interpretazioni più flessibili e realistiche.</p>
+            <p>Non si tratta di "pensare positivo": si tratta di <strong>pensare in modo più accurato e funzionale</strong>, sviluppando al tempo stesso comportamenti più adattivi.</p>
+
+            <div class="info-box">
+                <h3>📚 Cosa dice la ricerca</h3>
+                <p>La CBT è l'approccio psicologico con il maggior numero di studi clinici controllati a supporto della sua efficacia. È raccomandata dalle principali linee guida internazionali per il trattamento di ansia, depressione, disturbi alimentari, OCD e molti altri disturbi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COME FUNZIONA -->
+    <section style="background: var(--light); padding: 4.5rem 2rem;">
+        <div class="container">
+            <h2>Come funziona un percorso CBT</h2>
+            <p class="section-intro">Strutturato, collaborativo e orientato agli obiettivi</p>
+            <div class="fasi-grid">
+                <div class="fase-card">
+                    <div class="fase-number">1</div>
+                    <div>
+                        <h3>Valutazione iniziale</h3>
+                        <p>Nelle prime sessioni esploriamo insieme la tua situazione, la storia del disagio e i tuoi obiettivi. Non c'è nessun giudizio — solo ascolto e comprensione.</p>
+                    </div>
+                </div>
+                <div class="fase-card">
+                    <div class="fase-number">2</div>
+                    <div>
+                        <h3>Psicoeducazione</h3>
+                        <p>Capire come funziona il tuo problema è già parte della soluzione. Ti spiego il meccanismo che mantiene il disagio, così puoi iniziare a osservarlo dall'esterno.</p>
+                    </div>
+                </div>
+                <div class="fase-card">
+                    <div class="fase-number">3</div>
+                    <div>
+                        <h3>Lavoro sui pensieri</h3>
+                        <p>Identifichiamo i pensieri automatici e le credenze disfunzionali, e lavoriamo insieme per metterli alla prova e costruire alternative più flessibili.</p>
+                    </div>
+                </div>
+                <div class="fase-card">
+                    <div class="fase-number">4</div>
+                    <div>
+                        <h3>Esposizione e comportamento</h3>
+                        <p>Affrontiamo gradualmente le situazioni evitate e costruiamo nuovi comportamenti, passo dopo passo, con il supporto costante durante il percorso.</p>
+                    </div>
+                </div>
+                <div class="fase-card">
+                    <div class="fase-number">5</div>
+                    <div>
+                        <h3>Consolidamento e autonomia</h3>
+                        <p>L'obiettivo finale è che tu possa fare a meno di me. Lavoriamo per rendere stabili i cambiamenti e prevenire le ricadute in modo autonomo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PER CHI -->
+    <section class="bg-white">
+        <div class="container">
+            <h2>Per chi è indicata la CBT</h2>
+            <p class="section-intro">La CBT è efficace per un'ampia gamma di difficoltà</p>
+            <ul class="perchi-list">
+                <li><div><strong>Ansia generalizzata e attacchi di panico</strong> — preoccupazione eccessiva, tensione costante, paura improvvisa</div></li>
+                <li><div><strong>Depressione</strong> — umore basso, perdita di interesse, fatica a trovare motivazione</div></li>
+                <li><div><strong>Fobie specifiche e fobia sociale</strong> — paura di situazioni, oggetti o del giudizio altrui</div></li>
+                <li><div><strong>Disturbo ossessivo-compulsivo (OCD)</strong> — pensieri intrusivi e rituali compulsivi</div></li>
+                <li><div><strong>Difficoltà relazionali</strong> — comunicazione difficile, conflitti ricorrenti, isolamento</div></li>
+                <li><div><strong>Stress lavorativo e burnout</strong> — esaurimento, difficoltà a staccare, perdita di senso</div></li>
+                <li><div><strong>Bassa autostima</strong> — autocritica eccessiva, senso di inadeguatezza</div></li>
+                <li><div><strong>Adolescenti</strong> — difficoltà scolastiche, emotive o relazionali in età evolutiva</div></li>
+            </ul>
+
+            <div class="info-box">
+                <h3>🗓️ Durata del percorso</h3>
+                <p>La CBT è un approccio tipicamente <strong>breve e focalizzato</strong>. Un percorso standard varia da 10 a 20 sessioni, con cadenza settimanale o quindicinale. La durata dipende dalla natura del problema e dagli obiettivi concordati insieme.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CBT + ACT -->
+    <section style="background: var(--light); padding: 4.5rem 2rem;">
+        <div class="container">
+            <h2>CBT e ACT: un approccio integrato</h2>
+            <p>Nel mio lavoro integro la CBT con l'<strong>Acceptance and Commitment Therapy (ACT)</strong>, un'evoluzione più recente della terapia cognitivo comportamentale che aggiunge una dimensione fondamentale: invece di combattere i pensieri e le emozioni difficili, impariamo ad accettarli per quello che sono e a scegliere azioni coerenti con i nostri valori.</p>
+            <p>Questo approccio integrato è particolarmente efficace perché unisce la <strong>concretezza e la struttura della CBT</strong> con la <strong>flessibilità psicologica dell'ACT</strong>, adattandosi meglio alle diverse fasi e ai diversi bisogni di ogni persona.</p>
+
+            <div class="link-correlati">
+                <a href="/emdr/" class="link-correlato">→ Scopri anche l'EMDR</a>
+                <a href="/psicologa-scauri/" class="link-correlato">→ Studio a Scauri</a>
+                <a href="/psicologa-minturno/" class="link-correlato">→ Studio a Minturno</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Inizia il tuo percorso CBT</h2>
+            <p>Studio a Scauri (Minturno) e Formia. Disponibile anche online.</p>
+            <div class="cta-contacts">
+                <a href="https://wa.me/393757336493" target="_blank" class="cta-contact-item">💬 WhatsApp</a>
+                <a href="tel:+393757336493" class="cta-contact-item">📞 +39 375 7336493</a>
+                <a href="mailto:ariannasignore@gmail.com" class="cta-contact-item">✉️ Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Dott.ssa Arianna Signore — <a href="/psicologa-scauri/">Psicologa a Scauri</a> · <a href="/psicologa-minturno/">Minturno</a> · <a href="/emdr/">EMDR</a> | <a href="/">Home</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            document.addEventListener('click', function(e) {
+                if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

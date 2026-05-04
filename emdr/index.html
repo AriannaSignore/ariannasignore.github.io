@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/logo-arianna-signore-psicologa.jpg">
+
+    <title>EMDR a Scauri e Formia | Dott.ssa Arianna Signore — Elaborazione del Trauma</title>
+    <meta name="description" content="Cos'è l'EMDR e come funziona? La Dott.ssa Arianna Signore offre percorsi EMDR a Scauri (Minturno) e Formia per elaborare traumi, eventi difficili e memorie dolorose.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Dott.ssa Arianna Signore">
+
+    <meta property="og:title" content="EMDR a Scauri e Formia | Dott.ssa Arianna Signore">
+    <meta property="og:description" content="Percorsi EMDR a Scauri (Minturno) e Formia per elaborare traumi ed eventi difficili.">
+    <meta property="og:url" content="https://ariannasignore.it/emdr/">
+    <meta property="og:image" content="https://ariannasignore.it/arianna-signore-psicologo.jpg">
+    <meta property="og:locale" content="it_IT">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "EMDR — Eye Movement Desensitization and Reprocessing",
+      "description": "Informazioni sull'EMDR e percorsi a Scauri e Formia per elaborare traumi ed esperienze difficili.",
+      "url": "https://ariannasignore.it/emdr/",
+      "about": { "@type": "MedicalTherapy", "name": "EMDR" },
+      "author": {
+        "@type": "Person",
+        "name": "Dott.ssa Arianna Signore",
+        "url": "https://ariannasignore.it"
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #5fc1cc;
+            --secondary: #346a70;
+            --accent: #7b68c8;
+            --light: #f4f8f8;
+            --dark: #1a2e2f;
+            --text: #3a4a4b;
+            --muted: #7a9a9b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'DM Sans', sans-serif; line-height: 1.7; color: var(--text); }
+
+        /* HEADER */
+        header {
+            background: white; box-shadow: 0 1px 0 rgba(52,106,112,0.1);
+            position: fixed; width: 100%; top: 0; z-index: 1000;
+        }
+        .nav-container {
+            max-width: 1200px; margin: 0 auto; padding: 0.9rem 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+        }
+        .logo { width: 56px; height: 56px; }
+        .logo img { width: 100%; height: 100%; object-fit: contain; }
+        nav ul { display: flex; list-style: none; gap: 1.8rem; align-items: center; }
+        nav a { text-decoration: none; color: var(--dark); font-weight: 500; font-size: 0.95rem; transition: color 0.2s; }
+        nav a:hover { color: var(--primary); }
+        .nav-back {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            background: var(--light); border: 1.5px solid var(--primary);
+            border-radius: 999px; padding: 0.25rem 1rem;
+            color: var(--secondary) !important; font-size: 0.85rem !important; font-weight: 600 !important;
+        }
+        .nav-back:hover { background: var(--primary) !important; color: white !important; }
+
+        /* HERO — tono leggermente diverso per differenziare dalla CBT */
+        .hero {
+            background: linear-gradient(135deg, #2a4060 0%, #346a70 60%, var(--primary) 100%);
+            color: white; padding: 7rem 2rem 4.5rem;
+            position: relative; overflow: hidden;
+        }
+        .hero::before {
+            content: ''; position: absolute; top: -80px; right: -40px;
+            width: 420px; height: 420px;
+            background: rgba(255,255,255,0.04); border-radius: 50%;
+        }
+        .hero::after {
+            content: ''; position: absolute; bottom: -60px; left: 5%;
+            width: 280px; height: 280px;
+            background: rgba(255,255,255,0.03); border-radius: 50%;
+        }
+        .hero-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
+
+        .breadcrumb {
+            font-size: 0.82rem; opacity: 0.75; margin-bottom: 1rem;
+            display: flex; align-items: center; gap: 0.4rem;
+        }
+        .breadcrumb a { color: white; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+
+        .hero-badge {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 999px; padding: 0.35rem 1rem;
+            font-size: 0.82rem; font-weight: 500; margin-bottom: 1.2rem;
+        }
+        .hero-badge::before {
+            content: ''; width: 7px; height: 7px;
+            background: #c4b5f4; border-radius: 50%; display: inline-block;
+        }
+
+        .hero h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.8rem; line-height: 1.15;
+            margin-bottom: 1.2rem; font-weight: 400;
+        }
+        .hero p.lead { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; font-weight: 300; max-width: 640px; }
+        .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        .btn-primary {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: white; color: var(--secondary);
+            padding: 0.85rem 1.8rem; border-radius: 999px;
+            font-weight: 600; font-size: 0.95rem; text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
+
+        .btn-ghost {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            background: transparent; color: white;
+            border: 1.5px solid rgba(255,255,255,0.5);
+            padding: 0.85rem 1.8rem; border-radius: 999px;
+            font-weight: 500; font-size: 0.95rem; text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: white; }
+
+        /* CONTENUTO */
+        section { padding: 4.5rem 2rem; }
+        .container { max-width: 860px; margin: 0 auto; }
+
+        h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2rem; margin-bottom: 0.5rem;
+            color: var(--dark); font-weight: 400;
+        }
+        .section-intro { color: var(--muted); margin-bottom: 2rem; }
+        p { margin-bottom: 1.1rem; font-size: 1rem; }
+
+        /* FASI */
+        .fasi-grid { display: grid; gap: 1.2rem; margin: 1.5rem 0; }
+        .fase-card {
+            display: flex; gap: 1.2rem; align-items: flex-start;
+            background: white; padding: 1.3rem 1.5rem;
+            border-radius: 14px; border: 1px solid rgba(95,193,204,0.15);
+            box-shadow: 0 2px 12px rgba(52,106,112,0.06);
+        }
+        .fase-number {
+            width: 36px; height: 36px; flex-shrink: 0;
+            background: linear-gradient(135deg, #6a7fcb, var(--secondary));
+            border-radius: 50%; display: flex; align-items: center; justify-content: center;
+            color: white; font-weight: 700; font-size: 0.9rem;
+        }
+        .fase-card h3 { font-size: 1rem; color: var(--dark); margin-bottom: 0.3rem; }
+        .fase-card p { font-size: 0.95rem; margin: 0; color: var(--text); }
+
+        /* LISTA */
+        .perchi-list { list-style: none; padding: 0; display: grid; gap: 0.8rem; margin: 1.5rem 0; }
+        .perchi-list li {
+            display: flex; align-items: flex-start; gap: 0.8rem;
+            background: white; padding: 1rem 1.2rem;
+            border-radius: 12px; border: 1px solid rgba(95,193,204,0.15);
+            box-shadow: 0 2px 12px rgba(52,106,112,0.06); font-size: 0.97rem;
+        }
+        .perchi-list li::before {
+            content: '✓'; color: var(--primary); font-weight: 700;
+            font-size: 1rem; flex-shrink: 0; margin-top: 0.1rem;
+        }
+
+        /* INFO BOX */
+        .info-box {
+            background: var(--light); border-left: 4px solid var(--primary);
+            border-radius: 0 12px 12px 0; padding: 1.5rem 1.8rem; margin: 2rem 0;
+        }
+        .info-box h3 { color: var(--secondary); margin-bottom: 0.5rem; font-size: 1rem; }
+        .info-box p { margin: 0; font-size: 0.97rem; }
+
+        /* DOMANDA RISPOSTA */
+        .faq { display: grid; gap: 1.2rem; margin: 1.5rem 0; }
+        .faq-item {
+            background: white; border-radius: 14px; padding: 1.3rem 1.5rem;
+            border: 1px solid rgba(95,193,204,0.15);
+            box-shadow: 0 2px 12px rgba(52,106,112,0.06);
+        }
+        .faq-item h3 { font-size: 1rem; color: var(--secondary); margin-bottom: 0.5rem; }
+        .faq-item p { font-size: 0.95rem; margin: 0; }
+
+        /* LINK CORRELATI */
+        .link-correlati { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; }
+        .link-correlato {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            background: var(--light); border: 1.5px solid var(--primary);
+            color: var(--secondary); border-radius: 999px;
+            padding: 0.4rem 1.1rem; font-size: 0.88rem; font-weight: 500;
+            text-decoration: none; transition: background 0.2s, color 0.2s;
+        }
+        .link-correlato:hover { background: var(--primary); color: white; }
+
+        /* CTA */
+        .cta-section {
+            background: linear-gradient(135deg, #2a4060, #346a70);
+            color: white; padding: 4rem 2rem; text-align: center;
+        }
+        .cta-section h2 { color: white; margin-bottom: 0.8rem; }
+        .cta-section p { opacity: 0.9; margin-bottom: 2rem; font-size: 1.05rem; }
+        .cta-contacts { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+        .cta-contact-item {
+            display: flex; align-items: center; gap: 0.6rem;
+            background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.25);
+            padding: 0.75rem 1.4rem; border-radius: 999px;
+            color: white; text-decoration: none; font-weight: 500; font-size: 0.95rem;
+            transition: background 0.2s;
+        }
+        .cta-contact-item:hover { background: rgba(255,255,255,0.22); }
+
+        footer {
+            background: var(--dark); color: rgba(255,255,255,0.6);
+            text-align: center; padding: 1.8rem 2rem; font-size: 0.85rem;
+        }
+        footer a { color: var(--primary); text-decoration: none; }
+
+        .hamburger { display: none; flex-direction: column; cursor: pointer; padding: 5px; }
+        .bar { width: 24px; height: 2.5px; background: var(--dark); margin: 3px 0; transition: 0.3s; border-radius: 2px; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            h2 { font-size: 1.7rem; }
+            section { padding: 3rem 1.2rem; }
+            .hero-ctas { flex-direction: column; }
+            .btn-primary, .btn-ghost { justify-content: center; }
+            .hamburger { display: flex; z-index: 1001; }
+            nav.nav-menu {
+                position: fixed; left: -100%; top: 0;
+                flex-direction: column; background: white;
+                width: 80%; height: 100vh; transition: 0.3s;
+                box-shadow: 4px 0 24px rgba(0,0,0,0.12);
+                padding: 80px 2rem 2rem; z-index: 1000; overflow-y: auto;
+            }
+            nav.nav-menu.active { left: 0; }
+            nav.nav-menu ul { flex-direction: column; gap: 0; }
+            nav.nav-menu ul li { border-bottom: 1px solid var(--light); }
+            nav.nav-menu a { padding: 1rem 0; display: block; font-size: 1.05rem; }
+            .hamburger.active .bar:nth-child(2) { opacity: 0; }
+            .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+            .hamburger.active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="/" aria-label="Torna alla home">
+                <div class="logo">
+                    <img src="/logo-arianna-signore-psicologa.jpg" alt="Logo Dott.ssa Arianna Signore" width="56" height="56">
+                </div>
+            </a>
+            <div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="/#approccio">Approccio</a></li>
+                    <li><a href="/#chi-sono">Chi Sono</a></li>
+                    <li><a href="/#articoli">Articoli</a></li>
+                    <li><a href="/#contatti">Contatti</a></li>
+                    <li><a href="/terapia-cognitivo-comportamentale/" class="nav-back">CBT</a></li>
+                    <li><a href="/" class="nav-back">← Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="breadcrumb">
+                <a href="/">Home</a> › EMDR
+            </div>
+            <div class="hero-badge">Tecnica validata dall'OMS — Studio a Scauri e Formia</div>
+            <h1>EMDR — Elaborare il passato<br>per vivere il presente</h1>
+            <p class="lead">Una tecnica potente e ben documentata per elaborare traumi, eventi dolorosi e memorie che continuano a condizionare la tua vita anche a distanza di anni.</p>
+            <div class="hero-ctas">
+                <a href="https://wa.me/393757336493" target="_blank" class="btn-primary">💬 Prenota una consulenza</a>
+                <a href="tel:+393757336493" class="btn-ghost">📞 +39 375 7336493</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- COS'È -->
+    <section class="bg-white">
+        <div class="container">
+            <h2>Cos'è l'EMDR</h2>
+            <p class="section-intro">Eye Movement Desensitization and Reprocessing</p>
+            <p>L'<strong>EMDR</strong> (Eye Movement Desensitization and Reprocessing — desensibilizzazione e rielaborazione attraverso i movimenti oculari) è una tecnica psicoterapeutica sviluppata negli anni '80 dalla psicologa americana Francine Shapiro e oggi riconosciuta dall'<strong>Organizzazione Mondiale della Sanità (OMS)</strong> come trattamento efficace per il disturbo da stress post-traumatico.</p>
+            <p>L'idea alla base dell'EMDR è che certi eventi traumatici o molto stressanti vengono "bloccati" nel cervello in modo non elaborato: rimangono vivi, come se stessero ancora accadendo, e continuano a influenzare emozioni, pensieri e comportamenti nel presente. La tecnica usa stimolazioni bilaterali (tipicamente movimenti oculari, ma anche suoni o tocchi alternati) per permettere al cervello di completare il processo naturale di elaborazione.</p>
+            <p>Non si tratta di rivivere il trauma né di parlarne a lungo: l'EMDR lavora in modo diverso rispetto alla terapia tradizionale, spesso con risultati significativi in meno sessioni.</p>
+
+            <div class="info-box">
+                <h3>🏛️ Riconoscimento internazionale</h3>
+                <p>L'EMDR è riconosciuto dall'OMS, dall'American Psychological Association (APA) e dalle principali linee guida internazionali come trattamento di prima scelta per il trauma. Ha alle spalle oltre trent'anni di ricerche cliniche.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COME FUNZIONA -->
+    <section style="background: var(--light); padding: 4.5rem 2rem;">
+        <div class="container">
+            <h2>Come funziona una sessione EMDR</h2>
+            <p class="section-intro">Un processo strutturato in fasi, sempre al tuo ritmo</p>
+            <div class="fasi-grid">
+                <div class="fase-card">
+                    <div class="fase-number">1</div>
+                    <div>
+                        <h3>Storia e preparazione</h3>
+                        <p>Prima di iniziare il lavoro sull'evento traumatico, esploriamo insieme la tua storia, le tue risorse e ti preparo con tecniche di stabilizzazione emotiva. Non si comincia mai senza che tu ti senta pronta.</p>
+                    </div>
+                </div>
+                <div class="fase-card">
+                    <div class="fase-number">2</div>
+                    <div>
+                        <h3>Identificazione del target</h3>
+                        <p>Scegliamo insieme l'evento o la memoria su cui lavorare, identificando l'immagine più disturbante, le credenze negative associate e le sensazioni fisiche collegate.</p>
+                    </div>
+                </div>
+                <div class="fase-card">
+                    <div class="fase-number">3</div>
+                    <div>
+                        <h3>Desensibilizzazione</h3>
+                        <p>Attraverso stimolazioni bilaterali (movimenti oculari o altre modalità) mentre mantieni in mente l'immagine disturbante, il cervello inizia a elaborare la memoria in modo nuovo, riducendo progressivamente il suo impatto emotivo.</p>
+                    </div>
+                </div>
+                <div class="fase-card">
+                    <div class="fase-number">4</div>
+                    <div>
+                        <h3>Installazione e chiusura</h3>
+                        <p>Rafforziamo le credenze positive che emergono dall'elaborazione e ci assicuriamo che tu esca dalla sessione in uno stato di equilibrio emotivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PER CHI -->
+    <section class="bg-white">
+        <div class="container">
+            <h2>Per chi è indicato l'EMDR</h2>
+            <p class="section-intro">Non solo per traumi gravi — l'EMDR è efficace per molte situazioni</p>
+            <ul class="perchi-list">
+                <li><div><strong>Disturbo da stress post-traumatico (PTSD)</strong> — incidenti, violenze, abusi, eventi improvvisi</div></li>
+                <li><div><strong>Lutti complicati</strong> — perdite difficili da elaborare, dolore che non passa</div></li>
+                <li><div><strong>Esperienze di abbandono o trascuratezza</strong> nell'infanzia che influenzano ancora il presente</div></li>
+                <li><div><strong>Fobie intense</strong> che resistono ad altri approcci</div></li>
+                <li><div><strong>Ansia e attacchi di panico</strong> legati a eventi specifici</div></li>
+                <li><div><strong>Bassa autostima profonda</strong> radicata in esperienze passate</div></li>
+                <li><div><strong>Difficoltà relazionali ricorrenti</strong> con pattern che si ripetono</div></li>
+                <li><div><strong>Traumi "con la t minuscola"</strong> — esperienze non catastrofiche ma che hanno lasciato un segno</div></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="background: var(--light); padding: 4.5rem 2rem;">
+        <div class="container">
+            <h2>Domande frequenti sull'EMDR</h2>
+            <p class="section-intro">Le cose che mi chiedono più spesso</p>
+            <div class="faq">
+                <div class="faq-item">
+                    <h3>Devo rivivere il trauma durante la sessione?</h3>
+                    <p>No. L'EMDR non richiede di raccontare il trauma nei dettagli né di riviverlo emotivamente in modo intenso. Lavoriamo alla tua velocità, e io sono lì ad accompagnarti in ogni momento.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Quante sessioni sono necessarie?</h3>
+                    <p>Dipende dalla complessità del trauma e dalla persona. Traumi singoli e circoscritti possono richiedere poche sessioni. Storie più complesse o traumi multipli hanno bisogno di un percorso più lungo. Lo valutiamo insieme dopo una prima consulenza.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>L'EMDR si può combinare con la CBT?</h3>
+                    <p>Sì, ed è spesso la scelta migliore. Nel mio lavoro integro EMDR e CBT in modo complementare: la CBT fornisce strumenti pratici per il presente, l'EMDR elabora le radici del passato.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>È disponibile anche online?</h3>
+                    <p>Sì. L'EMDR può essere condotto efficacemente anche in seduta online, con alcune adattamenti tecnici. Se preferisci lavorare da casa, è un'opzione valida.</p>
+                </div>
+            </div>
+
+            <div class="link-correlati">
+                <a href="/terapia-cognitivo-comportamentale/" class="link-correlato">→ Scopri anche la CBT</a>
+                <a href="/psicologa-scauri/" class="link-correlato">→ Studio a Scauri</a>
+                <a href="/psicologa-minturno/" class="link-correlato">→ Studio a Minturno</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Inizia il tuo percorso EMDR</h2>
+            <p>Studio a Scauri (Minturno) e Formia. Disponibile anche online.</p>
+            <div class="cta-contacts">
+                <a href="https://wa.me/393757336493" target="_blank" class="cta-contact-item">💬 WhatsApp</a>
+                <a href="tel:+393757336493" class="cta-contact-item">📞 +39 375 7336493</a>
+                <a href="mailto:ariannasignore@gmail.com" class="cta-contact-item">✉️ Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Dott.ssa Arianna Signore — <a href="/psicologa-scauri/">Psicologa a Scauri</a> · <a href="/psicologa-minturno/">Minturno</a> · <a href="/terapia-cognitivo-comportamentale/">CBT</a> | <a href="/">Home</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            document.addEventListener('click', function(e) {
+                if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

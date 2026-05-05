@@ -80,19 +80,10 @@
             width: 420px; height: 420px;
             background: rgba(255,255,255,0.05); border-radius: 50%;
         }
-        .hero::after {
-            content: ''; position: absolute; bottom: -60px; left: 5%;
-            width: 260px; height: 260px;
-            background: rgba(255,255,255,0.03); border-radius: 50%;
-        }
         .hero-inner { max-width: 800px; margin: 0 auto; position: relative; z-index: 1; }
 
-        .breadcrumb {
-            font-size: 0.82rem; opacity: 0.75; margin-bottom: 1rem;
-            display: flex; align-items: center; gap: 0.4rem;
-        }
+        .breadcrumb { font-size: 0.82rem; opacity: 0.75; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.4rem; }
         .breadcrumb a { color: white; text-decoration: none; }
-        .breadcrumb a:hover { text-decoration: underline; }
 
         .hero-badge {
             display: inline-flex; align-items: center; gap: 0.5rem;
@@ -100,16 +91,9 @@
             border-radius: 999px; padding: 0.35rem 1rem;
             font-size: 0.82rem; font-weight: 500; margin-bottom: 1.2rem;
         }
-        .hero-badge::before {
-            content: ''; width: 7px; height: 7px;
-            background: #a8e6cb; border-radius: 50%; display: inline-block;
-        }
+        .hero-badge::before { content: ''; width: 7px; height: 7px; background: #a8e6cb; border-radius: 50%; display: inline-block; }
 
-        .hero h1 {
-            font-family: 'DM Serif Display', serif;
-            font-size: 2.8rem; line-height: 1.15;
-            margin-bottom: 1.2rem; font-weight: 400;
-        }
+        .hero h1 { font-family: 'DM Serif Display', serif; font-size: 2.8rem; line-height: 1.15; margin-bottom: 1.2rem; font-weight: 400; }
         .hero p.lead { font-size: 1.1rem; opacity: 0.9; margin-bottom: 2rem; font-weight: 300; max-width: 640px; }
         .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
 
@@ -136,60 +120,69 @@
         section { padding: 4.5rem 2rem; }
         .container { max-width: 860px; margin: 0 auto; }
 
-        h2 {
-            font-family: 'DM Serif Display', serif;
-            font-size: 2rem; margin-bottom: 0.5rem;
-            color: var(--dark); font-weight: 400;
-        }
+        h2 { font-family: 'DM Serif Display', serif; font-size: 2rem; margin-bottom: 0.5rem; color: var(--dark); font-weight: 400; }
         .section-intro { color: var(--muted); margin-bottom: 2rem; }
         p { margin-bottom: 1.1rem; font-size: 1rem; }
 
-        /* SINTOMI GRID */
-        .sintomi-grid {
-            display: grid; grid-template-columns: repeat(2, 1fr);
-            gap: 1rem; margin: 1.5rem 0;
-        }
+        .sintomi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin: 1.5rem 0; }
         .sintomo-card {
-            background: white; padding: 1.2rem 1.4rem;
-            border-radius: 12px; border: 1px solid rgba(95,193,204,0.15);
+            background: white; padding: 1.4rem 1.5rem;
+            border-radius: 14px; border: 1px solid rgba(95,193,204,0.15);
             box-shadow: 0 2px 12px rgba(52,106,112,0.06);
-            display: flex; align-items: flex-start; gap: 0.8rem;
+            display: flex; align-items: flex-start; gap: 1rem;
         }
-        .sintomo-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 0.1rem; }
-        .sintomo-card h3 { font-size: 0.95rem; color: var(--dark); margin-bottom: 0.2rem; }
+        .sintomo-icon {
+            width: 38px; height: 38px; flex-shrink: 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 10px; display: flex; align-items: center; justify-content: center;
+        }
+        .sintomo-icon svg { width: 20px; height: 20px; fill: none; stroke: white; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+        .sintomo-card h3 { font-size: 0.95rem; color: var(--dark); margin-bottom: 0.25rem; font-weight: 600; }
         .sintomo-card p { font-size: 0.88rem; color: var(--text); margin: 0; }
 
-        /* LISTA */
         .check-list { list-style: none; padding: 0; display: grid; gap: 0.8rem; margin: 1.5rem 0; }
         .check-list li {
-            display: flex; align-items: flex-start; gap: 0.8rem;
-            background: white; padding: 1rem 1.2rem;
+            display: flex; align-items: flex-start; gap: 1rem;
+            background: white; padding: 1.1rem 1.3rem;
             border-radius: 12px; border: 1px solid rgba(95,193,204,0.15);
             box-shadow: 0 2px 12px rgba(52,106,112,0.06); font-size: 0.97rem;
         }
-        .check-list li::before {
-            content: '✓'; color: var(--primary); font-weight: 700;
-            font-size: 1rem; flex-shrink: 0; margin-top: 0.1rem;
+        .check-icon {
+            width: 22px; height: 22px; flex-shrink: 0; margin-top: 0.15rem;
+            background: var(--primary); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
         }
+        .check-icon svg { width: 12px; height: 12px; fill: none; stroke: white; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 
-        /* INFO BOX */
         .info-box {
             background: var(--light); border-left: 4px solid var(--primary);
             border-radius: 0 12px 12px 0; padding: 1.5rem 1.8rem; margin: 2rem 0;
+            display: flex; gap: 1rem; align-items: flex-start;
         }
-        .info-box h3 { color: var(--secondary); margin-bottom: 0.5rem; font-size: 1rem; }
-        .info-box p { margin: 0; font-size: 0.97rem; }
+        .info-box-icon {
+            width: 36px; height: 36px; flex-shrink: 0;
+            background: var(--primary); border-radius: 8px;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .info-box-icon svg { width: 18px; height: 18px; fill: none; stroke: white; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+        .info-box h3 { color: var(--secondary); margin-bottom: 0.4rem; font-size: 0.95rem; }
+        .info-box p { margin: 0; font-size: 0.95rem; }
 
-        /* CITAZIONE */
         .quote-box {
             background: linear-gradient(135deg, var(--secondary), var(--primary));
             color: white; padding: 2rem 2.5rem;
             border-radius: 16px; margin: 2rem 0;
             font-family: 'DM Serif Display', serif;
-            font-size: 1.25rem; line-height: 1.5; font-style: italic;
+            font-size: 1.2rem; line-height: 1.6; font-style: italic;
+            position: relative;
+        }
+        .quote-box::before {
+            content: '\201C';
+            font-size: 5rem; line-height: 1; opacity: 0.2;
+            position: absolute; top: 0.5rem; left: 1.2rem;
+            font-family: 'DM Serif Display', serif;
         }
 
-        /* LINK CORRELATI */
         .link-correlati { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; }
         .link-correlato {
             display: inline-flex; align-items: center; gap: 0.4rem;
@@ -200,7 +193,6 @@
         }
         .link-correlato:hover { background: var(--primary); color: white; }
 
-        /* CTA */
         .cta-section {
             background: linear-gradient(135deg, #2c5364, var(--secondary));
             color: white; padding: 4rem 2rem; text-align: center;
@@ -216,11 +208,9 @@
             transition: background 0.2s;
         }
         .cta-contact-item:hover { background: rgba(255,255,255,0.22); }
+        .cta-contact-item svg { width: 18px; height: 18px; fill: none; stroke: white; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
 
-        footer {
-            background: var(--dark); color: rgba(255,255,255,0.6);
-            text-align: center; padding: 1.8rem 2rem; font-size: 0.85rem;
-        }
+        footer { background: var(--dark); color: rgba(255,255,255,0.6); text-align: center; padding: 1.8rem 2rem; font-size: 0.85rem; }
         footer a { color: var(--primary); text-decoration: none; }
 
         .hamburger { display: none; flex-direction: column; cursor: pointer; padding: 5px; }
@@ -235,8 +225,7 @@
             .sintomi-grid { grid-template-columns: 1fr; }
             .hamburger { display: flex; z-index: 1001; }
             nav.nav-menu {
-                position: fixed; left: -100%; top: 0;
-                flex-direction: column; background: white;
+                position: fixed; left: -100%; top: 0; flex-direction: column; background: white;
                 width: 80%; height: 100vh; transition: 0.3s;
                 box-shadow: 4px 0 24px rgba(0,0,0,0.12);
                 padding: 80px 2rem 2rem; z-index: 1000; overflow-y: auto;
@@ -275,126 +264,143 @@
         </div>
     </header>
 
-    <!-- HERO -->
     <section class="hero">
         <div class="hero-inner">
-            <div class="breadcrumb">
-                <a href="/">Home</a> › Ansia
-            </div>
+            <div class="breadcrumb"><a href="/">Home</a> › Ansia</div>
             <div class="hero-badge">Percorsi CBT e ACT — Studio a Scauri e Formia</div>
             <h1>Ansia — quando la preoccupazione prende il controllo</h1>
-            <p class="lead">L'ansia non è una debolezza, né un difetto di carattere. È una risposta che il tuo sistema nervoso ha imparato a usare in modo eccessivo. Si può cambiare.</p>
+            <p class="lead">L'ansia non è una debolezza, né un difetto di carattere. È una risposta che il tuo sistema nervoso ha imparato a usare in modo eccessivo. Ci si può lavorare.</p>
             <div class="hero-ctas">
-                <a href="https://wa.me/393757336493" target="_blank" class="btn-primary">💬 Prenota una consulenza</a>
-                <a href="tel:+393757336493" class="btn-ghost">📞 +39 375 7336493</a>
+                <a href="https://wa.me/393757336493" target="_blank" class="btn-primary">Prenota una consulenza</a>
+                <a href="tel:+393757336493" class="btn-ghost">+39 375 7336493</a>
             </div>
         </div>
     </section>
 
-    <!-- COS'È L'ANSIA -->
     <section class="bg-white">
         <div class="container">
             <h2>Cos'è l'ansia</h2>
             <p class="section-intro">Una risposta normale che può diventare un problema</p>
             <p>L'ansia è una risposta emotiva e fisiologica naturale di fronte a situazioni percepite come minacciose o incerte. In dosi moderate è utile: ci prepara ad affrontare le sfide, ci tiene all'erta, ci motiva ad agire.</p>
-            <p>Diventa un problema quando è <strong>sproporzionata rispetto alla situazione</strong>, quando persiste anche in assenza di pericoli reali, quando inizia a limitare la vita quotidiana — il lavoro, le relazioni, il sonno, il benessere fisico.</p>
+            <p>Diventa un problema quando è <strong>sproporzionata rispetto alla situazione</strong>, quando persiste anche in assenza di pericoli reali, quando inizia a limitare la vita quotidiana: il lavoro, le relazioni, il sonno, il benessere fisico.</p>
             <p>In questi casi l'ansia non è più un segnale utile: è diventata un meccanismo che si autoalimenta, spesso senza che tu capisca bene perché.</p>
-
             <div class="quote-box">
-                "Non stai esagerando. Non sei troppo sensibile. Stai semplicemente affrontando qualcosa che il tuo sistema nervoso ha imparato a temere — e si può lavorarci."
+                Non stai esagerando. Non sei troppo sensibile. Stai semplicemente affrontando qualcosa che il tuo sistema nervoso ha imparato a temere e ci si può lavorare.
             </div>
         </div>
     </section>
 
-    <!-- COME SI MANIFESTA -->
     <section style="background: var(--light); padding: 4.5rem 2rem;">
         <div class="container">
             <h2>Come si manifesta l'ansia</h2>
             <p class="section-intro">L'ansia parla attraverso il corpo, i pensieri e i comportamenti</p>
             <div class="sintomi-grid">
                 <div class="sintomo-card">
-                    <div class="sintomo-icon">🧠</div>
+                    <div class="sintomo-icon">
+                        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
                     <div>
                         <h3>Pensieri</h3>
-                        <p>Preoccupazioni continue, catastrofizzazione, difficoltà a concentrarsi, mente che "non si spegne" mai.</p>
+                        <p>Preoccupazioni continue, catastrofizzazione, difficoltà a concentrarsi, mente che non riesce a fermarsi.</p>
                     </div>
                 </div>
                 <div class="sintomo-card">
-                    <div class="sintomo-icon">💓</div>
+                    <div class="sintomo-icon">
+                        <svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </div>
                     <div>
                         <h3>Corpo</h3>
                         <p>Tensione muscolare, battito accelerato, respiro corto, mal di stomaco, affaticamento cronico, disturbi del sonno.</p>
                     </div>
                 </div>
                 <div class="sintomo-card">
-                    <div class="sintomo-icon">🚪</div>
+                    <div class="sintomo-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
                     <div>
                         <h3>Comportamenti</h3>
                         <p>Evitare situazioni temute, rimandare, cercare continue rassicurazioni, isolarsi, controllare tutto in modo eccessivo.</p>
                     </div>
                 </div>
                 <div class="sintomo-card">
-                    <div class="sintomo-icon">😰</div>
+                    <div class="sintomo-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    </div>
                     <div>
                         <h3>Emozioni</h3>
                         <p>Senso di pericolo imminente, irrequietezza, irritabilità, sensazione di perdere il controllo.</p>
                     </div>
                 </div>
             </div>
-
             <div class="info-box">
-                <h3>📌 Quando chiedere aiuto</h3>
-                <p>Se l'ansia ti fa evitare situazioni importanti, influenza le tue relazioni, compromette il lavoro o il sonno, o semplicemente ti pesa ogni giorno — è il momento giusto per parlarne con un professionista.</p>
+                <div class="info-box-icon">
+                    <svg viewBox="0 0 24 24"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+                </div>
+                <div>
+                    <h3>Quando chiedere aiuto</h3>
+                    <p>Se l'ansia ti fa evitare situazioni importanti, influenza le tue relazioni, compromette il lavoro o il sonno, o semplicemente ti pesa ogni giorno, è il momento giusto per parlarne con un professionista.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- COME SI TRATTA -->
     <section class="bg-white">
         <div class="container">
             <h2>Come si lavora sull'ansia</h2>
             <p class="section-intro">Un approccio basato sulle evidenze scientifiche</p>
             <p>Nel mio studio a Scauri e Formia utilizzo due approcci complementari che la ricerca scientifica indica come particolarmente efficaci per l'ansia:</p>
-
             <ul class="check-list">
-                <li><div><strong>CBT — Terapia Cognitivo Comportamentale:</strong> identifichiamo insieme i pensieri distorti e i comportamenti di evitamento che alimentano l'ansia. Impari a riconoscerli, metterli in discussione e sostituirli con risposte più funzionali.</div></li>
-                <li><div><strong>ACT — Acceptance and Commitment Therapy:</strong> invece di combattere l'ansia, impari a stare con essa senza esserne sopraffatta. L'obiettivo non è eliminare l'ansia, ma toglierle il potere di controllare le tue scelte.</div></li>
-                <li><div><strong>Tecniche di regolazione emotiva:</strong> strumenti pratici da usare nella vita di tutti i giorni — respirazione, grounding, defusione cognitiva — per gestire i momenti di picco ansioso.</div></li>
-                <li><div><strong>Esposizione graduale:</strong> affrontiamo progressivamente le situazioni evitate, in modo sicuro e controllato, riducendo progressivamente la risposta ansiosa.</div></li>
+                <li>
+                    <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div><strong>CBT — Terapia Cognitivo Comportamentale:</strong> identifichiamo insieme i pensieri distorti e i comportamenti di evitamento che alimentano l'ansia. Impari a riconoscerli, metterli in discussione e sostituirli con risposte più funzionali.</div>
+                </li>
+                <li>
+                    <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div><strong>ACT — Acceptance and Commitment Therapy:</strong> invece di combattere l'ansia, impari a stare con essa senza esserne sopraffatta. L'obiettivo non è eliminare l'ansia, ma toglierle il potere di controllare le tue scelte.</div>
+                </li>
+                <li>
+                    <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div><strong>Tecniche di regolazione emotiva:</strong> strumenti pratici da usare nella vita di tutti i giorni come respirazione, grounding e defusione cognitiva per gestire i momenti di picco ansioso.</div>
+                </li>
+                <li>
+                    <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+                    <div><strong>Esposizione graduale:</strong> affrontiamo progressivamente le situazioni evitate, in modo sicuro e controllato, riducendo nel tempo la risposta ansiosa.</div>
+                </li>
             </ul>
-
-            <div class="info-box">
-                <h3>🗓️ Quanto dura il percorso</h3>
-                <p>Per l'ansia un percorso CBT dura tipicamente tra le 10 e le 16 sessioni, con cadenza settimanale o quindicinale. Dipende dalla severità e dalla storia del problema. Lo valutiamo insieme fin dalla prima consulenza.</p>
-            </div>
         </div>
     </section>
 
-    <!-- DOVE -->
     <section style="background: var(--light); padding: 4.5rem 2rem;">
         <div class="container">
             <h2>Dove si svolge il percorso</h2>
-            <p>Ricevo a <strong>Scauri</strong> (Via Castagna 28, Minturno — LT) e a <strong>Formia</strong> (Via della Conca 49). Entrambi gli studi sono facilmente raggiungibili da tutta la provincia di Latina e dall'alto Casertano.</p>
-            <p>È disponibile anche il <strong>percorso online</strong>, con la stessa qualità clinica della seduta in presenza — una buona opzione per chi ha difficoltà a spostarsi o preferisce lavorare da casa.</p>
-
+            <p>Ricevo a <strong>Scauri</strong> (Via Castagna 28, Minturno LT) e a <strong>Formia</strong> (Via della Conca 49). Entrambi gli studi sono facilmente raggiungibili da tutta la provincia di Latina e dall'alto Casertano.</p>
+            <p>È disponibile anche il <strong>percorso online</strong>, con la stessa qualità clinica della seduta in presenza: una buona opzione per chi ha difficoltà a spostarsi o preferisce lavorare da casa.</p>
             <div class="link-correlati">
-                <a href="/psicologa-scauri/" class="link-correlato">→ Studio a Scauri</a>
-                <a href="/psicologa-formia/" class="link-correlato">→ Studio a Formia</a>
-                <a href="/terapia-cognitivo-comportamentale/" class="link-correlato">→ Approfondisci la CBT</a>
-                <a href="/emdr/" class="link-correlato">→ Approfondisci l'EMDR</a>
+                <a href="/psicologa-scauri/" class="link-correlato">Studio a Scauri</a>
+                <a href="/psicologa-formia/" class="link-correlato">Studio a Formia</a>
+                <a href="/terapia-cognitivo-comportamentale/" class="link-correlato">Approfondisci la CBT</a>
+                <a href="/emdr/" class="link-correlato">Approfondisci l'EMDR</a>
             </div>
         </div>
     </section>
 
-    <!-- CTA -->
     <section class="cta-section">
         <div class="container">
             <h2>Parliamone</h2>
-            <p>Il primo passo è il più difficile. Scrivimi o chiamami — senza impegno.</p>
+            <p>Il primo passo è il più difficile. Scrivimi o chiamami, senza impegno.</p>
             <div class="cta-contacts">
-                <a href="https://wa.me/393757336493" target="_blank" class="cta-contact-item">💬 WhatsApp</a>
-                <a href="tel:+393757336493" class="cta-contact-item">📞 +39 375 7336493</a>
-                <a href="mailto:ariannasignore@gmail.com" class="cta-contact-item">✉️ Email</a>
+                <a href="https://wa.me/393757336493" target="_blank" class="cta-contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    WhatsApp
+                </a>
+                <a href="tel:+393757336493" class="cta-contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.78a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    +39 375 7336493
+                </a>
+                <a href="mailto:ariannasignore@gmail.com" class="cta-contact-item">
+                    <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Email
+                </a>
             </div>
         </div>
     </section>

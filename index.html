@@ -119,6 +119,10 @@
             padding: 0.25rem 0.9rem;
             color: var(--secondary) !important;
             font-size: 0.85rem !important;
+            display: inline-block;
+            text-align: center;
+            min-width: 70px;
+            box-sizing: border-box;
         }
         .nav-local:hover {
             background: var(--primary) !important;
@@ -235,6 +239,7 @@
             text-align: center;
             font-size: 0.88rem;
             letter-spacing: 0.02em;
+            line-height: 1.8;
         }
         .location-strip a {
             color: var(--primary);
@@ -242,8 +247,15 @@
             font-weight: 500;
             margin: 0 0.5rem;
             transition: opacity 0.2s;
+            white-space: nowrap;
         }
         .location-strip a:hover { opacity: 0.8; }
+        .strip-sep { margin: 0 0.6rem; opacity: 0.35; }
+        @media (max-width: 768px) {
+            .location-strip { display: flex; flex-direction: column; gap: 0.3rem; padding: 0.8rem 1rem; }
+            .strip-sep { display: none; }
+            .location-strip a { margin: 0; }
+        }
 
         /* ── SEZIONI GENERALI ── */
         section { padding: 5rem 2rem; }
@@ -543,7 +555,14 @@
             nav.nav-menu ul { flex-direction: column; gap: 0; }
             nav.nav-menu ul li { border-bottom: 1px solid var(--light); }
             nav.nav-menu a { padding: 1rem 0; display: block; font-size: 1.05rem; }
-            .nav-local { margin: 0.8rem 0; display: inline-block; }
+            .nav-local {
+                margin: 0.5rem 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 0.6rem 1rem !important;
+                font-size: 0.95rem !important;
+            }
 
             .hamburger.active .bar:nth-child(2) { opacity: 0; }
             .hamburger.active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
@@ -601,7 +620,11 @@
 
     <!-- LOCATION STRIP -->
     <div class="location-strip">
-        Studio a <a href="/psicologa-scauri/">Scauri (Minturno)</a> · <a href="/psicologa-minturno/">Minturno</a> · <a href="/psicologa-formia/">Formia</a> &nbsp;|&nbsp; Anche online
+        <a href="https://maps.google.com/?q=Via+Castagna+28,+Scauri,+Minturno+LT" target="_blank">📍 Studio a Scauri: Via Castagna 28, Minturno (LT)</a>
+        <span class="strip-sep">|</span>
+        <a href="https://maps.google.com/?q=Via+della+Conca+49,+Formia+LT" target="_blank">📍 Studio a Formia: Via della Conca 49 (LT)</a>
+        <span class="strip-sep">|</span>
+        Anche online
     </div>
 
     <!-- IL MIO APPROCCIO -->
@@ -639,7 +662,7 @@
         <div class="container">
             <div class="chi-sono-inner">
                 <div class="chi-sono-text">
-                    <h2>Psicologa Arianna Signore</h2>
+                    <h2>La Psicologa Arianna Signore</h2>
                     <p class="section-subtitle">Psicologa con studio a Scauri e Formia</p>
                     <p>Sono <strong>Arianna Signore</strong>, psicologa specializzata in terapia cognitivo-comportamentale (CBT) e Acceptance and Commitment Therapy (ACT), con studio a <strong>Scauri (Minturno)</strong> e Formia.</p>
                     <p>Aiuto chi affronta <strong>ansia, depressione e difficoltà relazionali</strong> a sviluppare strategie pratiche per gestire emozioni, pensieri e sfide quotidiane. Lavoro anche con adolescenti, famiglie e ragazzi con <strong>DSA e disturbi del neurosviluppo</strong>.</p>
